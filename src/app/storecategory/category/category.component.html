@@ -1,0 +1,22 @@
+<div class="container-fluid">
+    <div class="col-md-12">
+        SPORTS STORE
+    </div>
+    <div class="col-md-6">
+
+        <select>
+          <option value="0">--All--</option>
+          <option *ngFor="let catgory of categorys" value={{catgory.id}}>
+              {{ catgory.name }}
+          </option>
+      </select>
+    </div>
+    <div class="col-md-6">
+        <select>
+            <option value="0">--All--</option>
+            <option *ngFor="let prodct of products" value={{prodct.id}}>
+                {{ prodct.name }}
+            </option>
+        </select>
+    </div>
+</div>

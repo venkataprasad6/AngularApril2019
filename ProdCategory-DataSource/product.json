@@ -1,0 +1,33 @@
+{
+    "products": [{
+            "id": 1,
+            "name": "Wicket",
+            "category": 1
+        },
+        {
+            "id": 2,
+            "name": "CricketBat",
+            "category": 1
+        },
+        {
+            "id": 3,
+            "name": "WicketKeeperGloves",
+            "category": 1
+        },
+        {
+            "id": 4,
+            "name": "GoalKeeperGloves",
+            "category": 2
+        },
+        {
+            "id": 5,
+            "name": "Football",
+            "category": 2
+        },
+        {
+            "id": 6,
+            "name": "TennisBats",
+            "category": 3
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+  "categorys": [
+    {
+      "id": 1,
+      "name": "Sports"
+    },
+    {
+      "id": 2,
+      "name": "Home"
+    },
+    {
+      "id": 2,
+      "name": "Travel"
+    }
+  ]
+}
