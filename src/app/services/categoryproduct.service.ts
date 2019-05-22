@@ -14,4 +14,8 @@ export class CategoryproductService {
   getRemoteProducts(){
     return this.http.get("http://localhost:4000/products")
   }
+
+  getProductByCategoryId(categoryid){
+    return this.http.get("http://localhost:4000/products?category="+categoryid)
+  }
 }

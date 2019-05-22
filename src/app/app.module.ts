@@ -40,7 +40,6 @@ import { Delete7Component } from './delete/notinfolder/delete7.component';
 import { Delete8Component } from './delete/notinfolder/delete8.component';
 import { SampleComponent } from './bootstrap/sample/sample.component';
 import { CategoryComponent } from './storecategory/category/category.component';
-import { ProductComponent } from './storeproduct/product/product.component';
 //import { LazyComponentComponent } from './lazy/lazy-component/lazy-component.component';
 
 
@@ -68,8 +67,8 @@ import { ProductComponent } from './storeproduct/product/product.component';
                     UpdateFriendComponent, 
                     ParentComponent, 
                     ChildComponent, 
-                    AnimateComponent, Delete1Component, Delete2Component, Delete3Component, Delete4Component, Delete5Component, Delete6Component, Delete7Component, Delete8Component, SampleComponent, CategoryComponent,
-                     ProductComponent
+                    AnimateComponent, Delete1Component, Delete2Component, Delete3Component, Delete4Component, Delete5Component, Delete6Component, Delete7Component, Delete8Component, SampleComponent, 
+                    CategoryComponent,                     
                     //  ,LazyComponentComponent
                     ],
     imports: [ BrowserModule, 

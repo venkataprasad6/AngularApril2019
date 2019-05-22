@@ -4,17 +4,18 @@
     </div>
     <div class="col-md-6">
 
-        <select>
-          <option value="0">--All--</option>
-          <option *ngFor="let catgory of categorys" value={{catgory.id}}>
+        <!-- <select (change)="filterProducts($event.target.value)"> -->
+        <select (change)="getALLProductsByCategoryID($event.target.value)">
+          <option value="0 "> {{ categorysTitle }}</option>
+          <option *ngFor="let catgory of categorys " value={{catgory.id}}>
               {{ catgory.name }}
           </option>
       </select>
     </div>
-    <div class="col-md-6">
+    <div class="col-md-6 ">
         <select>
-            <option value="0">--All--</option>
-            <option *ngFor="let prodct of products" value={{prodct.id}}>
+            <option value="0 ">{{productsTitle}}</option>
+            <option *ngFor="let prodct of products " value={{prodct.id}}>
                 {{ prodct.name }}
             </option>
         </select>

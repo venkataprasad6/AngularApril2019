@@ -13,13 +13,15 @@ export class CategoryComponent implements OnInit {
 
   categorys:any=[]
   products:any=[]
-  
+  //cacheproducts:any=[]
+  categorysTitle='--All--'
+  productsTitle='--All--'
 
   constructor(private catprodremote: CategoryproductService,private router:Router) { }
 
   ngOnInit() {
 this.getAllCategorys();
-this.getRemoteProducts();
+this.getALLProducts();
   }
   getAllCategorys=function(){
     this.catprodremote.getRemoteCategorys().subscribe((data)=>{      
@@ -29,13 +31,42 @@ this.getRemoteProducts();
     })
   }
 
-  getRemoteProducts=function(){
+  getALLProducts=function(){
     this.catprodremote.getRemoteProducts().subscribe((data)=>{
 this.products=data;
+//this.cacheproducts=data;
 console.log("remote data assigned to products")
 console.log(this.products);
     })
   }
+
+  getALLProductsByCategoryID=function(categoryid){
+    console.log("category change event fired");
+    console.log(categoryid);
+    this.catprodremote.getProductByCategoryId(categoryid).subscribe((data)=>{      
+      console.log(data);
+      this.products=data;
+      
+          })
+  }
+
+  
+//   filterProducts(categoryvalue: any) {
+//     if (categoryvalue == "0")
+//     {
+//         this.products = this.cacheproducts;
+//         console.log(this.products);
+//     }
+//     else
+//     {
+//       console.log(this.products);
+//       console.log(categoryvalue);
+//     this.products = this.cacheproducts.filter((item) => item.category == categoryvalue);
+//     console.log(this.products);
+//     }
+// }
+
+  
 
   
 }

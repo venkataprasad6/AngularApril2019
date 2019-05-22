@@ -20,7 +20,6 @@ import { ParentComponent } from './eventbinding/parent/parent.component';
 import { AnimateComponent } from './animation/animate/animate.component';
 import { SampleComponent } from './bootstrap/sample/sample.component';
 import { CategoryComponent } from './storecategory/category/category.component';
-import { ProductComponent } from './storeproduct/product/product.component';
 //import { LazyComponentComponent } from './lazy/lazy-component/lazy-component.component';
 
 const routes: Routes = [ 
@@ -112,10 +111,6 @@ const routes: Routes = [
 {
   path:'category',
   component:CategoryComponent
-},
-{
-  path:'product',
-  component:ProductComponent
 },
 {
   path:'lazy',
